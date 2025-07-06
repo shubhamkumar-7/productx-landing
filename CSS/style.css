@@ -1,0 +1,208 @@
+:root {
+  --primary-color: #2196f3;
+  --secondary-color: #00acc1;
+  --light-bg: #f5f7fa;
+  --dark-bg: #121212;
+  --dark-text: #eee;
+}
+.arrow {
+  float: right;
+  transition: transform 0.3s ease;
+}
+.material-icons {
+  font-size: 28px;
+  vertical-align: middle;
+  margin-right: 8px;
+  color: var(--primary-color);
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--light-bg);
+  color: #333;
+}
+
+body.dark-theme {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* COMMON BUTTON STYLES */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.primary-btn {
+  background: var(--primary-color);
+  color: white;
+}
+.primary-btn:hover {
+  background: #1976d2;
+}
+.secondary-btn {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.secondary-btn:hover {
+  background: #e3f2fd;
+}
+.small-btn {
+  background: var(--secondary-color);
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+.small-btn:hover {
+  background: #00838f;
+}
+
+/* HERO */
+.hero {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+}
+.hero-content h1 span {
+  color: var(--primary-color);
+}
+
+/* FEATURES */
+.features {
+  padding: 50px;
+  text-align: center;
+}
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* PRICING */
+.pricing {
+  padding: 50px;
+  background: #e0f7fa;
+  text-align: center;
+}
+.pricing-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.price-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease;
+}
+.price-card:hover {
+  transform: scale(1.05);
+}
+.highlighted {
+  border: 2px solid var(--secondary-color);
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 60px;
+  text-align: center;
+  background: white;
+}
+.testimonial-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.testimonial-card {
+  background: #f3f8ff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* FAQ */
+.faq {
+  padding: 50px;
+  background: #e3f2fd;
+}
+.faq-item {
+  margin-bottom: 10px;
+}
+.faq-question {
+  background: white;
+  padding: 15px 20px;
+  width: 100%;
+  border: none}
+  .contact {
+  padding: 60px;
+  background: #fff;
+  text-align: center;
+}
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+input:focus, textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+.form-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-btn:hover {
+  background: #1976d2;
+}
